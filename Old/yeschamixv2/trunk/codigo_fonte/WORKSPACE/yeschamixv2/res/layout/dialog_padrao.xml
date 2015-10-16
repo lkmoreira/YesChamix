@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+ <ImageButton
+        android:id="@+id/imageButtonVoltar"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_x="900px"
+        android:layout_y="590px"
+        android:src="@drawable/forward"
+        android:background="@android:color/transparent" >
+    </ImageButton>
+
+</LinearLayout>

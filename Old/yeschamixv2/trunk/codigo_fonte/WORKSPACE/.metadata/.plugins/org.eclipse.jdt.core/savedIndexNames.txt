@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+E:\SISTEMAS\ANDROID\YesChamix\yeschamixv2\trunk\codigo_fonte\WORKSPACE\.metadata\.plugins\org.eclipse.jdt.core
+1049182968.index
+1095098052.index
+2970323840.index

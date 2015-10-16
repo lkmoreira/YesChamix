@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"  android:background="#FFFFFF"
+    android:layout_height="wrap_content" >
+        
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Deseja sincronizar dados com o servidor?"/>  
+		
+		 <LinearLayout
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:layout_width="fill_parent"   		android:layout_below="@+id/label1"
+		  android:layout_height="wrap_content">      
+		    <Button
+		        android:id="@+id/botaoSim"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"		
+		        android:text="Sim"
+		         android:textColor="#006CB4" />
+		 
+		     <Button
+		        android:id="@+id/botaoNao"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Não"		        
+		         android:textColor="#006CB4" />       
+		    
+		 </LinearLayout>       
+   
+</RelativeLayout>

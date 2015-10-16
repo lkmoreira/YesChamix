@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sincronizar os dados com o servidor."
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_y="0px"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@drawable/logo1" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label2" >
+
+        <Button
+            android:id="@+id/retornar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Pagina principal"
+            android:textColor="#006CB4" />
+
+        <Button
+            android:id="@+id/sincronizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Sincronizar Dados"
+            android:textColor="#006CB4" />
+    </LinearLayout>
+
+</RelativeLayout>

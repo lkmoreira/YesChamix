@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/layoutBusca"
+        android:layout_width="fill_parent"
+        android:layout_height="145dip"
+        android:background="@drawable/fundode"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/logode" />
+
+        <Button
+            android:id="@+id/imageBotaoFamilia"
+            android:layout_width="115dip"
+            android:layout_height="57dip"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@+id/imageBotaoProduto"
+            android:background="@drawable/botaofamilias" />
+
+        <Button
+            android:id="@+id/imageBotaoProduto"
+            android:layout_width="115dip"
+            android:layout_height="57dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/botaoprodutos" />
+
+        <EditText
+            android:id="@+id/editTextProdutoBusca"
+            android:layout_width="350dip"
+            android:layout_height="48dip"
+            android:layout_below="@+id/imageBotaoFamilia"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@+id/buttonBuscarProduto"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonBuscarProduto"
+            android:layout_width="90dip"
+            android:layout_height="39dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="77dip"
+            android:background="@drawable/botaobusca"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layoutBusca"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10px"
+        android:animateLayoutChanges="true"
+        android:gravity="left" />
+
+    <RelativeLayout
+        android:id="@+id/layoutDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gallery1"
+        android:background="#FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="0px"
+            android:layout_y="150px"
+            android:src="@drawable/fundotexto" />
+
+        <LinearLayout
+            android:id="@+id/lnlDados"
+            android:layout_width="540dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtEstoque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/produto_indisponivel"
+                android:textColor="@color/cor_bordo"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/codigoTexto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Código: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/codigo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nomeTexto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/descricaoTexto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição: "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/descricaoProdutoGaleria"
+                    android:layout_width="320dip"
+                    android:layout_height="100dip"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btMaisDetalhes"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/ver_mais" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/precoTexto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Preco:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/preco"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="350px"
+        android:layout_height="300px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gallery1"
+        android:layout_gravity="left"
+        android:layout_marginTop="30dip"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/backwardImage"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/backward" >
+    </ImageButton>
+
+</RelativeLayout>

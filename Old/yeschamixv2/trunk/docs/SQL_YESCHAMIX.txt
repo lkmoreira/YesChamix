@@ -1,0 +1,24 @@
+--CONSULTAR FAMILIA
+SELECT * FROM usuario.SYC AS familia;
+
+--CONSULTAR GRUPO DE PRODUTOS
+SELECT * FROM usuario.SBM AS grupoProdutos;
+
+--CONSULTAR CLASSIFICAÇÃO
+SELECT * FROM usuario.XGR AS classificacao;
+
+--CONSULTAR PRODUTOS
+SELECT produto.B1_COD, produto.B1_XDSSIT, produto.B1_XDTSIT,
+		produto.B1_XDTQSIT, produto.B1_XOPTSIT, produto.B1_XATUTAB,
+		produto.B1_XATUNUM,familia.YC_COD, familia.YC_XDSSIT, familia.YC_XORDEM,
+		familia.YC_XARQIM, grupoProduto.BM_GRUPO,  grupoProduto.BM_XDSSIT, classificacao.XGR_COD,
+		classificacao.XGR_DESC, produto.B1_XATUFOT 
+			FROM  usuario.SB1 AS produto
+			INNER JOIN  usuario.SYC AS familia ON familia.YC_COD = produto.B1_FPCOD
+			INNER JOIN  usuario.SBM AS grupoProduto ON grupoProduto.BM_GRUPO = produto.B1_GRUPO
+			INNER JOIN  usuario.XGR AS classificacao ON classificacao.XGR_COD = produto.B1_XGRUPO;
+
+Banco
+yesturbo
+y35turbo
+http://mysql.yesturbo.kinghost.net/index.php

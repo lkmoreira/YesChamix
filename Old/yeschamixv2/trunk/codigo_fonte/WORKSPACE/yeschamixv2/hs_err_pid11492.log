@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3494), pid=11492, tid=8756
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_29-b11
+# Java VM: Java HotSpot(TM) Client VM (20.4-b02 mixed mode windows-x86 )
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x022e9c00):  JavaThread "Unknown thread" [_thread_in_vm, id=8756, stack(0x00380000,0x003d0000)]
+
+Stack: [0x00380000,0x003d0000],  sp=0x003cf870,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1335ba]
+V  [jvm.dll+0x12e56b]
+V  [jvm.dll+0x1639e]
+V  [jvm.dll+0x17bdf]
+V  [jvm.dll+0x26cc5]
+V  [jvm.dll+0x27506]
+V  [jvm.dll+0x278b5]
+V  [jvm.dll+0x27949]
+V  [jvm.dll+0x27a0c]
+V  [jvm.dll+0x27a8a]
+V  [jvm.dll+0x27b6d]
+V  [jvm.dll+0x27e39]
+V  [jvm.dll+0x6c383]
+V  [jvm.dll+0x6c75c]
+V  [jvm.dll+0xf9b4c]
+V  [jvm.dll+0x11848b]
+V  [jvm.dll+0x9eb60]
+C  [javaw.exe+0x1657]
+C  [javaw.exe+0x1e2c]
+C  [javaw.exe+0x8614]
+C  [KERNEL32.DLL+0x1495d]  BaseThreadInitThunk+0xe
+C  [ntdll.dll+0x498ee]  RtlInitializeExceptionChain+0x84
+C  [ntdll.dll+0x498c4]  RtlInitializeExceptionChain+0x5a
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x022e9c00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8756, stack(0x00380000,0x003d0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\bin\javaw.exe
+0x770a0000 - 0x77208000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x75880000 - 0x759c0000 	C:\WINDOWS\SYSTEM32\KERNEL32.DLL
+0x753f0000 - 0x754bf000 	C:\WINDOWS\SYSTEM32\KERNELBASE.dll
+0x71460000 - 0x714fa000 	C:\WINDOWS\system32\apphelp.dll
+0x6cd50000 - 0x6cfa2000 	C:\WINDOWS\AppPatch\AcGenral.DLL
+0x75500000 - 0x755be000 	C:\WINDOWS\SYSTEM32\msvcrt.dll
+0x75800000 - 0x7583e000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x74ad0000 - 0x74aed000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x75d80000 - 0x75dc1000 	C:\WINDOWS\SYSTEM32\SHLWAPI.dll
+0x71c80000 - 0x71d5c000 	C:\WINDOWS\SYSTEM32\UxTheme.dll
+0x75b10000 - 0x75c5f000 	C:\WINDOWS\SYSTEM32\USER32.dll
+0x751d0000 - 0x752d8000 	C:\WINDOWS\SYSTEM32\GDI32.dll
+0x73270000 - 0x73290000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x70830000 - 0x70842000 	C:\WINDOWS\SYSTEM32\samcli.dll
+0x750b0000 - 0x751bb000 	C:\WINDOWS\SYSTEM32\ole32.dll
+0x75710000 - 0x75797000 	C:\WINDOWS\SYSTEM32\OLEAUT32.dll
+0x702c0000 - 0x702d5000 	C:\WINDOWS\SYSTEM32\MSACM32.dll
+0x74a50000 - 0x74a58000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x75e20000 - 0x76fc3000 	C:\WINDOWS\SYSTEM32\SHELL32.dll
+0x73640000 - 0x73659000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x72090000 - 0x720a9000 	C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x720b0000 - 0x721d4000 	C:\WINDOWS\SYSTEM32\urlmon.dll
+0x755e0000 - 0x75657000 	C:\WINDOWS\SYSTEM32\ADVAPI32.dll
+0x749f0000 - 0x74a4e000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x71ef0000 - 0x71f04000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x75c60000 - 0x75d11000 	C:\WINDOWS\SYSTEM32\RPCRT4.dll
+0x74ac0000 - 0x74ac9000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x74d50000 - 0x74e9e000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x73250000 - 0x73270000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x73660000 - 0x7366e000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x74070000 - 0x74287000 	C:\WINDOWS\SYSTEM32\iertutil.dll
+0x74350000 - 0x74514000 	C:\WINDOWS\SYSTEM32\WININET.dll
+0x74a60000 - 0x74ab1000 	C:\WINDOWS\SYSTEM32\bcryptPrimitives.dll
+0x754c0000 - 0x754fa000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x749b0000 - 0x749cf000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x736a0000 - 0x73717000 	C:\WINDOWS\SYSTEM32\SHCORE.DLL
+0x756e0000 - 0x75705000 	C:\WINDOWS\system32\IMM32.DLL
+0x752f0000 - 0x753e7000 	C:\WINDOWS\SYSTEM32\MSCTF.dll
+0x7c340000 - 0x7c396000 	E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\jre\bin\msvcr71.dll
+0x6d8a0000 - 0x6db4f000 	E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\jre\bin\client\jvm.dll
+0x6d850000 - 0x6d85c000 	E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\jre\bin\java.dll
+0x6d420000 - 0x6d449000 	E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\jre\bin\jdwp.dll
+0x6d740000 - 0x6d746000 	E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\jre\bin\npt.dll
+0x6d890000 - 0x6d89f000 	E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\jre\bin\zip.dll
+0x755d0000 - 0x755d6000 	C:\WINDOWS\system32\PSAPI.DLL
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:65431 -Dvce.launchers=org.eclipse.ve.internal.java.vce.launcher.remotevm.JFCLauncher -Dvce.launcher.class=br.com.gv8.yeschamix.activity.MenuActivity -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Desenvolvimento\android-sdk\platforms\android-11\android.jar 
+java_command: org.eclipse.ve.internal.java.vce.launcher.remotevm.JavaBeansLauncher
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=E:\SRC\INCUBADORA SIGMA\FERRAMENTAS\JDKs\jdk1.7.0_21_64b
+PATH=E:\V8SOFT\FERRAMENTAS\Java jdk-6u29-windows-i586\jdk1.6.0_29\jre\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\SRC\INCUBADORA SIGMA\FERRAMENTAS\JDKs\jdk1.7.0_21_64b\bin;E:\V8SOFT\FERRAMENTAS\apache-tomcat-7.0.27\bin;E:\SRC\INCUBADORA SIGMA\FERRAMENTAS\MAVENS 3\apache-maven-3.1.1\bin;C:\Desenvolvimento\android-sdk\platform-tools;C:\Program Files\VDownloader;C:\Program Files\TortoiseSVN\bin;
+USERNAME=Lukas
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.2 Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 8247904k(2105128k free), swap 12550900k(2924276k free)
+
+vm_info: Java HotSpot(TM) Client VM (20.4-b02) for windows-x86 JRE (1.6.0_29-b11), built on Oct  3 2011 01:01:08 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Wed Feb 26 13:28:21 2014
+elapsed time: 0 seconds
+

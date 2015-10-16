@@ -1,0 +1,153 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.gv8.yeschamix</groupId>
+	<artifactId>WEBSERVICE_RESTFUL_YESV2</artifactId>
+	<version>1.0.0.0</version>
+	<packaging>war</packaging>
+
+	<name>VIEW_STRUTS</name>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<catalina-home>${CATALINA_HOME}</catalina-home>
+			</properties>
+		</profile>
+		<profile>
+			<id>homologacao</id>
+			<properties>
+				<catalina-home>${CATALINA_HOME}</catalina-home>
+			</properties>
+		</profile>
+	</profiles>
+
+	<build>
+		<finalName>webservice_gv8_yes</finalName>
+		<plugins>
+			<!--INCIO USADO PARA CRIAR UM PROJETO STRUS FUNCIONAL COM MAVEN2 Apaga 
+				diretorio do projeto dentro do tomcat, por isso é necessário estar definida 
+				variavel de ambiente CATALINA_HOME -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.4.1</version>
+				<configuration>
+					<excludeDefaultDirectories>true</excludeDefaultDirectories>
+					<filesets>
+						<fileset>
+							<directory>${CATALINA_HOME}\webapps\${project.build.finalName}
+							</directory>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<addDefaultImplementationEntries>true
+							</addDefaultImplementationEntries>
+						</manifest>
+					</archive>
+					<webappDirectory>${CATALINA_HOME}\webapps\${project.build.finalName}
+					</webappDirectory>
+				</configuration>
+			</plugin>
+			<!--FIM USADO PARA CRIAR UM PROJETO STRUS FUNCIONAL COM MAVEN2 -->
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>json-lib-jdk15</groupId>
+			<artifactId>json-lib-jdk15</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.ezmorph</groupId>
+			<artifactId>ezmorph</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>asm</groupId>
+			<artifactId>asm</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.sun.jersey</groupId> <artifactId>jersey-server</artifactId> 
+			<version>1.14</version> </dependency> -->
+
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-bundle</artifactId>
+			<version>1.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>jsr311-api</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+
+		<!-- PROJETOS -->
+		<!-- <dependency> <groupId>br.com.cronos</groupId> <artifactId>CRONOS-HIBERNATE-PERSISTENCE</artifactId> 
+			<version>1.0.0.0</version> </dependency> <dependency> <groupId>br.com.cronos</groupId> 
+			<artifactId>CRONOS-UTILIDADES</artifactId> <version>1.0.0.0</version> </dependency> -->
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.ow2.util</groupId>
+			<artifactId>util-base64</artifactId>
+			<version>1.0.37</version>
+		</dependency>
+
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>snapshot-repository.java.net</id>
+			<name>Java.net Snapshot Repository for Maven</name>
+			<url>https://maven.java.net/content/repositories/snapshots/</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+
+</project>

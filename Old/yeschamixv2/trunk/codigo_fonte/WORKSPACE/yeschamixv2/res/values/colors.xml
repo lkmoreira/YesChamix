@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="altercolor1">#ffCAFFEE</color>
+    <color name="cor_cinza">#ffDDDDE8</color>
+    <color name="cor_cinza_claro">#E3E3F0</color>
+    <color name="cor_branco">#FFFFFF</color>
+
+    <drawable name="cor_fundo">#00FFFFFF</drawable>
+
+    <color name="cor_texto">#5068A6</color>
+    <color name="cor_botao_login">#F8C301</color>
+    <color name="cor_bordo">#AA0000</color>
+    <color name="cor_fundo_item">#8FBC8F</color>
+    <color name="cor_texto_item">#000000</color>
+    <color name="cor_texto_menu">#006CB4</color>
+    <color name="lilaz_claro">#D8D8FF</color>
+    <color name="background_listagemProduto">#CACAFF</color>
+    <color name="background_listagemProduto2">#CACAFC</color>
+    <color name="background_colorHintListagemProduto">#05566A</color>
+    <color name="cor_texto_fundo_edit_text">#BDBCBC</color>
+    <color name="cor_texto_verDetalhes">#EC0000</color>
+    <color name="cor_texto_tituloListagem">#020882</color>
+    <color name="cor_texto_valorListagem">#006CB4</color>
+    <color name="cor_texto_autocomplete">#00923F</color>
+    <color name="background_combo_grupo_produto">#CCBC24</color>
+    <color name="cor_preto">#000000</color>
+    <color name="cor_dourada">#FFBF00</color>
+    <color name="cor_vermelha">#ff0000</color>
+    <color name="light_cyan">#FFFFFF</color>
+    <color name="cor_menu">#F5F5F5</color>
+
+</resources>

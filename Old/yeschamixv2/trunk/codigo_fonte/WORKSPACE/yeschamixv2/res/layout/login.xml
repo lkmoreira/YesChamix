@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lilaz_claro"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <include
+        android:id="@+id/incMenuTopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/barra_topo" />
+
+    <include
+        android:id="@+id/include02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        layout="@layout/barra_foot" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include02"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/incMenuTopo"
+        android:background="@color/light_cyan"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" >
+
+            <CheckBox
+                android:id="@+id/chkLembrarSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="   Lembrar senha"
+                android:textColor="@color/cor_preto" />
+
+            <Button
+                android:id="@+id/btnLogar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/chkLembrarSenha"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/logar" />
+
+            <Button
+                android:id="@+id/btnLimparDados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnLogar"
+                android:layout_alignBottom="@+id/btnLogar"
+                android:layout_toRightOf="@+id/chkLembrarSenha"
+                android:background="@drawable/limpar" />
+
+            <EditText
+                android:id="@+id/txtSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnLogar"
+                android:layout_alignRight="@+id/btnLimparDados"
+                android:layout_marginBottom="30dp"
+                android:ems="8"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+            
+
+            <EditText
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtSenha"
+                android:layout_alignRight="@+id/txtSenha"
+                android:layout_marginBottom="18dp"
+                android:ems="8"
+                android:inputType="text"
+                android:maxLines="1" >
+                <requestFocus />
+                </EditText>
+
+            
+
+            <Button
+                android:id="@+id/btnSairAplicacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/chkLembrarSenha"
+                android:layout_alignBottom="@+id/chkLembrarSenha"
+                android:layout_alignLeft="@+id/btnLimparDados"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/sair" />
+
+            <TextView
+                android:id="@+id/txvSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtSenha"
+                android:layout_alignBottom="@+id/txtSenha"
+                android:layout_alignLeft="@+id/btnLogar"
+                android:text="Senha: "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/cor_preto" />
+
+            <TextView
+                android:id="@+id/txvUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtLogin"
+                android:layout_alignBottom="@+id/txtLogin"
+                android:layout_alignLeft="@+id/txvSenha"
+                android:text="Usuário: "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/cor_preto" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
