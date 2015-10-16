@@ -1,9 +1,10 @@
 package br.com.bplm.yesbrasil.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import yesbrasil.bplm.com.br.yeschamix.R;
+import br.com.bplm.yesbrasil.R;
+
 
 public class SplashActivity extends AppCompatActivity {
 
