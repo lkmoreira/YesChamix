@@ -4,12 +4,12 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@color/black"
-    android:gravity="center_horizontal" >
+    android:gravity="center_horizontal">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp" >
+        android:layout_marginBottom="2dp">
 
         <RelativeLayout
             android:id="@+id/relativeLayout1"
@@ -19,7 +19,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:background="@color/grey"
-            android:gravity="center" >
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/textView1"
