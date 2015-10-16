@@ -16,6 +16,7 @@ import org.json.JSONObject;
 import java.io.Serializable;
 
 import br.com.bplm.yesbrasil.util.PreferenceUtils;
+import br.com.bplm.yesbrasil.util.Preferences;
 
 /**
  * Main Application class. Here is the common place for configuring
