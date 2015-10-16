@@ -1,4 +1,4 @@
-package yesbrasil.bplm.com.br.yeschamix.activity;
+package br.com.bplm.yesbrasil.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
