@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="altercolor1">#ffCAFFEE</color>
+    <color name="grey">#ffDDDDE8</color>
+    <color name="light_grey">#E3E3F0</color>
+    <color name="white">#FFFFFF</color>
+
+    <drawable name="background">#00FFFFFF</drawable>
+
+    <color name="text_color">#5068A6</color>
+    <color name="button_login">#F8C301</color>
+    <color name="cor_bordo">#AA0000</color>
+    <color name="item_backgound">#8FBC8F</color>
+    <color name="item_text">#000000</color>
+    <color name="color_menu">#006CB4</color>
+    <color name="light_purple">#D8D8FF</color>
+    <color name="list_product_background">#CACAFF</color>
+    <color name="list_product_background_2">#CACAFC</color>
+    <color name="list_product_colorHint">#05566A</color>
+    <color name="edit_text_background">#BDBCBC</color>
+    <color name="details_backgroung">#EC0000</color>
+    <color name="list_title">#020882</color>
+    <color name="list_value">#006CB4</color>
+    <color name="autocomplete_background">#00923F</color>
+    <color name="dropdown_product_background">#CCBC24</color>
+    <color name="black">#000000</color>
+    <color name="gold">#FFBF00</color>
+    <color name="red">#ff0000</color>
+    <color name="light_cyan">#FFFFFF</color>
+    <color name="color_menu_2">#F5F5F5</color>
+
 </resources>

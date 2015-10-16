@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageSwitcher
+        android:id="@+id/ImageSwitcher01" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </ImageSwitcher>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnVoltar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/backward" />
+
+        <ImageButton
+            android:id="@+id/btnAvancar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/forward" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="127dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/logo1" />
+
+        <TextView
+            android:id="@+id/lbCaminho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Caminho"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/list_product_background" />
+
+        <TextView
+            android:id="@+id/txtValorCaminho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Valor Caminho"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/list_product_background" />
+
+        <TextView
+            android:id="@+id/lbQtdImagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Qtd Imagens"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/list_product_background" />
+
+        <TextView
+            android:id="@+id/txtValorQtdImagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Valor Qtd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/list_product_background" />
+
+        <TextView
+            android:id="@+id/lbTamanhoOcupado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Tamanho Ocupado"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/list_product_background" />
+
+        <TextView
+            android:id="@+id/txtValorTamanhoOcupado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Valor Tamanho"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/list_product_background" />
+
+        <Button
+            android:id="@+id/btVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:text="Voltar"
+            android:textColor="#006CB4" />
+    </LinearLayout>
+
+</RelativeLayout>
