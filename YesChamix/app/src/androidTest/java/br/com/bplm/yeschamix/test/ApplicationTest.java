@@ -1,4 +1,4 @@
-package yesbrasil.bplm.com.br.yeschamix;
+package br.com.bplm.yeschamix.test;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
