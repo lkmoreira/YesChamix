@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">YesChamix</string>
+
+    <string name="app_name">YesTurbo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">YesChamix</string>
+    <string name="familia_prompt">Família</string>
+    <string name="classificacao_prompt">Selecione</string>
+    <string name="oportunidade_prompt">Oportunidades</string>
+    <string name="destaque_prompt">Lançamentos</string>
+    <string name="grupoProduto_prompt">Selecione</string>
+
+    <color name="titlebackgroundcolor">@android:color/background_dark</color>
+    <color name="titletextcolor">#FFFF00</color>
+
+    <string name="hello">Hello World, DynTABSample!</string>
+    <string name="filler">Here is a lazy Loading Grid View Example</string>
+    <string name="usuario">Usuário: </string>
+    <string name="senha">Senha: </string>
+    <string name="logar">Logar</string>
+    <string name="id_preco">Código</string>
+    <string name="preco">Tabela</string>
+    <string name="folder_prompt">Folders</string>
+    <string name="lblEstoque">Estoque:</string>
+    <string name="tabela">Tabela</string>
+    <string name="mais_detalhes">Mais Detalhes</string>
+    <string name="produto_indisponivel">Produto indisponível, verifique outras opções</string>
+
 </resources>
