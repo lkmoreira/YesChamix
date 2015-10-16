@@ -13,7 +13,7 @@ import org.androidannotations.annotations.UiThread;
 @EBean
 public class BaseController {
 
-    @RootContext
+    /*@RootContext
     protected BaseActivity baseActivity;
 
     @UiThread
@@ -24,6 +24,6 @@ public class BaseController {
     @UiThread
     protected void hideDialog() {
         baseActivity.hideDialog();
-    }
+    }*/
 
 }

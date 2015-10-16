@@ -7,7 +7,7 @@
     <color name="light_grey">#E3E3F0</color>
     <color name="white">#FFFFFF</color>
 
-    <drawable name="background">#00FFFFFF</drawable>
+    <color name="background">#00FFFFFF</color>
 
     <color name="text_color">#5068A6</color>
     <color name="button_login">#F8C301</color>

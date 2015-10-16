@@ -14,9 +14,9 @@ import org.androidannotations.annotations.EFragment;
 
 import br.com.bplm.yesbrasil.R;
 
-@EFragment(R.layout.dialog_load)
+/*@EFragment(R.layout.dialog_load)*/
 public class LoadDialog extends DialogFragment {
-    protected BaseActivity activity;
+    /*protected BaseActivity activity;
 
     public LoadDialog() {
         setCancelable(true);
@@ -43,6 +43,6 @@ public class LoadDialog extends DialogFragment {
     public void onCancel(DialogInterface dialog) {
         dismissAllowingStateLoss();
         activity.finish();
-    }
+    }*/
 
 }

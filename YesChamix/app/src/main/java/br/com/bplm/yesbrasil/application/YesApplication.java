@@ -41,7 +41,7 @@ public class YesApplication extends Application implements Serializable {
         Log.d("Application", "Init");
 
 
-        prefs = new Preferences(getApplicationContext());
+        //prefs = new Preferences(getApplicationContext());
         mAppContext = getApplicationContext();
 
         initPreferences();
