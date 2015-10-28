@@ -24,51 +24,51 @@ public interface Preferences {
     String driveDatabase();
 
     @DefaultString("")
-    String caminhoFTP();
+    String pathFTP();
 
     @DefaultString("")
     String userFTP();
 
     @DefaultString("")
-    String passFTP();
+    String passwordFTP();
 
     @DefaultString("")
-    String pastaPrincipalFTP();
+    String mainFolderFTP();
 
     @DefaultString("")
-    String pastaProduto();
+    String productFolder();
 
     @DefaultString("")
-    String pastaFamilia();
+    String familyFolder();
 
     @DefaultString("")
-    String pastaFolders();
+    String folderersFolder();
 
     @DefaultString("")
-    String caminhoPasta();
+    String pathFolder();
 
     @DefaultString("")
     String login();
 
     @DefaultString("")
-    String codPreco();
+    String proceCod();
 
     @DefaultString("")
-    String senha();
+    String password();
 
     @DefaultString("")
-    String usuarioLogado();
+    String loggedUser();
 
     @DefaultBoolean(true)
-    Boolean primeiraVez();
+    boolean isFirstTime();
 
     @DefaultBoolean(false)
-    Boolean precoSelecionado();
+    boolean selectedPrice();
 
     @DefaultBoolean(false)
-    Boolean isBancoConfigurado();
+    boolean isDatabaseConfigured();
 
     @DefaultInt(0)
-    Integer localErro();
+    int localError();
 
 }
