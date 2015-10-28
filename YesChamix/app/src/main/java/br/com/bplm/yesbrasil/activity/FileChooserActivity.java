@@ -6,8 +6,10 @@ import android.view.MenuItem;
 
 import org.androidannotations.annotations.EActivity;
 
+import br.com.bplm.yesbrasil.R;
 
-@EActivity
+
+@EActivity(R.layout.file_view)
 public class FileChooserActivity extends ListActivity{
 
 	/*private File currentDir;

@@ -45,17 +45,21 @@ public class SplashActivity extends BaseActivity {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                if (prefs.isDatabaseConfigured().get()) {
-                    //startActivity(new Intent(getApplication(), LoginActivity.class));
-                } else {
-                    //startActivity(new Intent(getApplication(), FileChooserActivity.class));
-                }
+                checkDatabase();
             }
+
         }, 5000);
     }
 
     @Override
     public String activityNameForTracking() {
         return null;
+    }
+
+    private void checkDatabase() {
+        if (prefs.isDatabaseConfigured().get())
+            LoginActivity_.intent(this).start();
+        else
+            FileChooserActivity_.intent(this).start();
     }
 }
